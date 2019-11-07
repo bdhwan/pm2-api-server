@@ -3,7 +3,7 @@ echo "ok"
 echo $GIT_URL
 
 # git clone $GIT_URL
-git clone "$GIT_URL" && cd "$(basename "$GIT_URL" .git)"
+git clone --depth 1 --single-branch --branch master "$GIT_URL" && cd "$(basename "$GIT_URL" .git)"
 
 if [ -z "$PM2_INSTANCE" ]
 then
