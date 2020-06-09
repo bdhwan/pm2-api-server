@@ -1,6 +1,8 @@
 FROM bdhwan/parse-server:3.1
 MAINTAINER bdhwan@gmail.com
 
+
+
 ADD healthcheck.js /home/healthcheck.js
 ADD check.sh /home/check.sh
 
